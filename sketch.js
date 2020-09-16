@@ -6,8 +6,11 @@ let q=51;
 let mn=-50;
 let mx=50;
 let z=0;
+let canvas;
+
 function setup() {  
-	createCanvas(w,h);
+	canvas=createCanvas(w,h);
+	canvas.parent('canvas');
 	for(let i=0;i<50;i++){
 		img[i] = loadImage("data/picture1/Movie"+q+".jpg");
 	console.log(q);
